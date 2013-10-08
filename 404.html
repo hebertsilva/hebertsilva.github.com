@@ -1,0 +1,33 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="pt-br"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="pt-br"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="pt-br"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="pt-br"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <title>---TTULO SITE---</title>
+
+  <style type="text/css">
+     *{ margin:0; padding:0; }
+     a{ color:#707070; text-decoration:none; }
+     .ir{ text-indent:-9999px; font-size:1px; line-height:1em; }
+     body{ background:url(http://www.pubdesign.com.br/media/images/bg_site.jpg) repeat 0 0; }
+     #container{ width:260px; margin:0 auto; padding:150px 0 0 0; }
+     h1{ width:122px; height:137px; background:url(http://www.pubdesign.com.br/media/images/logo_404.png) no-repeat 0 0; margin:0 auto; }
+     p.ops{ background:url(http://www.pubdesign.com.br/media/images/frase_ops.png) no-repeat 0 0; width:226px; height:133px; }
+     p.notfound{ background:url(http://www.pubdesign.com.br/media/images/frase_notfound.png) no-repeat 0 0; width:258px; height:25px; margin:10px 0 0 0; }
+     p.link{ text-align:center; font-family:'Georgia', serif; color:#707070; font-size:12px; padding:10px 0 0 0; }
+  </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1 class="ir">---TTULO SITE---</h1>
+        <p class="ir ops">Ops!</p>
+        <p class="ir notfound">página não encontrada</p>
+        <p class="link">---TTULO SITE---<br>
+        Acesse: <a href="http://{{ request.META.HOST_NAME }}">{{ request.META.HOST_NAME }}</a></p>
+    </div>
+</body>
+</html>

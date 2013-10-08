@@ -1,0 +1,20 @@
+@function calc-em($target-px, $context) {
+	@return ($target-px / $context) * 1em;
+}
+
+
+@mixin ie-background-cover($image) {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+		src="#{image_url($image, true, false)}",
+		sizingMethod="scale"
+	);
+}
+
+@mixin transition($time) {
+	-webkit-transition: $time;
+	-o-transition: $time;
+	-ms-transition: $time;
+	-moz-transition: $time;
+	transition: $time;
+}
