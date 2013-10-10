@@ -1,5 +1,6 @@
 @import "compass/typography/text/replacement";
 @import "compass/utilities/general/clearfix"; 
+@import "layout/functions";
 
 .clearfix {
     @include legacy-pie-clearfix;   
@@ -49,6 +50,6 @@
 }
 
 .wrapper {
-    width: calc-em(960px, 12px);
+    width: calc-em(1024px, 12px);
     margin: 0 auto;
 }

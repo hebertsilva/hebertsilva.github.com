@@ -198,7 +198,7 @@ h2.title-section {
 	}
 
 	.wrap-board {
-		width: calc-em(960px/2, 12px);
+		// width: calc-em(990px/2, 12px);
 		position: absolute;
 		right: 0;
 		bottom: -100%;
@@ -210,9 +210,9 @@ h2.title-section {
 
 		.board-content {
 			background: $color05;
-			border-radius: 5px;
-			width: 40em;
-			height: 45em; 
+			border-radius: 5px 5px 0 0;
+			width: 45em;
+			height: 50em; 
 			position: relative;
 			box-shadow: -1em 1em 0 rgba(0, 0, 0, 0.1);
 
@@ -333,6 +333,8 @@ h2.title-section {
 	background: $color01;
 	-webkit-box-shadow: inset 0 -0.4em 0 $color04;
 	box-shadow: inset 0 -0.4em 0 $color04;
+	z-index: 10;
+	position: relative;
 	
 	.wrap-project {
 		text-align: center;
@@ -343,6 +345,7 @@ h2.title-section {
 
 		ul.lits-process {
 			display: inline-block;
+			margin: 5em 0 14em 0;
 
 			li {
 				width: 25em;
@@ -395,6 +398,7 @@ h2.title-section {
 				border-radius: 5px;
 				-webkit-box-shadow: 0em 0.4em 0 #B5B5B5;
 				box-shadow: 0 0.4em 0 #B5B5B5;
+				position: relative;
 				@include ceaser-transition($properties: border-color, $duration: 500ms);
 
 				h3.title-work {
@@ -411,34 +415,75 @@ h2.title-section {
 					height: 20em;
 					overflow: hidden;
 					line-height: 20em;
-					position: relative;
 					background: #925743;
+					position: relative;
 
 					img {
 						display: inline-block;
 						vertical-align: middle;
 					}
 
-					a.link-expand-text {
-						width: 100%;
+					.text {
+						background: rgba(255, 255, 255, 0.99);
 						height: 100%;
-						opacity: 0;
 						position: absolute;
-						background: $color04;
-						z-index: 4;
-						top: 0;
-						display: block;
-						@include ceaser-transition($properties: opacity, $duration: 400ms);
+						bottom: 0;
+						padding: 0 1em;
+						line-height: 20em;
+						opacity: 0;
+						@include ceaser-transition($properties: opacity, $duration: 500ms);
+						p {
+							@include font-2;
+							color: $color05;
+							font-size: 1.4em;
+							line-height: 1.6em;
+							display: inline-block;
+							vertical-align: middle;
+							// opacity: 0;
+
+							span.btn {
+								font-size: 0.8em;
+								background: $color10;
+								color: $white;
+								@include font-2;
+								font-weight: 600;
+								padding: 0.22em 0.9em;
+								box-shadow: 0 4px 0 #8E3728;
+								border-radius: 5px;
+								cursor: pointer;
+								margin-top: 18em;
+								display: inline-block;
+								@include ceaser-transition($properties: background, $duration: 500ms);
+								@include ceaser-transition($properties: margin-top, $duration: 400ms);
+
+								&:hover {
+									background: #CA5642;
+								}
+							}
+						}
 					}
+				}
+
+				a.link-expand-text {
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					z-index: 4;
+					top: 0;
+					display: block;
 				}
 
 				&:hover {
 					h3.title-work {
-						background: $color04;
+						// background: $color04;
 					}
 					.wrap-item { 
-						a.link-expand-text {
+						.text {
 							opacity: 1;
+
+							span.btn {
+								margin-top: 1em;
+							}
 						}
 					}
 				}
@@ -448,15 +493,62 @@ h2.title-section {
 }
 
 #false-footer {
-	box-shadow: none;
+	height: 20em;
+	z-index: 0;
+	position: relative;
 }
 
 #footer {
 	width: 100%;
+	height: 20em;
 	position: fixed;
 	bottom: 0;
 	z-index: 5;
-	background: url('../../images/global/bg-footer.jpg') no-repeat center;
-	background-size: cover;
-	box-shadow: none;
+	// background: url('../../images/global/bg-footer.jpg') no-repeat center;
+	// background-size: cover;
+	// box-shadow: none;
+
+	background: $color05;
+	.wrap-footer {
+		width: 40em;
+		text-align: center;
+		line-height: 20em;
+		ul.shares {
+			display: inline-block;
+			// margin-top: 8em;
+			li {
+				margin: 0 5em 1em 0;
+				float: left;
+				&:last-child {
+					margin-right: 0;
+				}	
+				a {
+					@include font-1;
+					font-size: 1.8em;
+					line-height: 1em;
+					@include ceaser-transition($properties: color, $duration: 500ms);
+
+					&.twitter {
+						color: $color11;
+					}
+
+					&.face {
+						color: $color12;
+					}
+
+					&.git {
+						color: $color13;
+					}
+
+					&.linkedin {
+						color: $color14;
+					}
+
+					&:hover {
+						opacity: 0.8;
+					}
+				}
+			}
+		}
+	}
 }

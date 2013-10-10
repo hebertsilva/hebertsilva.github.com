@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
-/* line 4, ../../sass/layout/_helpers.scss */
+/* line 5, ../../sass/layout/_helpers.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -14,14 +14,14 @@
   visibility: hidden;
 }
 
-/* line 8, ../../sass/layout/_helpers.scss */
+/* line 9, ../../sass/layout/_helpers.scss */
 .ir {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
 }
 
-/* line 12, ../../sass/layout/_helpers.scss */
+/* line 13, ../../sass/layout/_helpers.scss */
 .ir-input {
   text-indent: -119988px;
   overflow: hidden;
@@ -29,7 +29,7 @@
   line-height: 0;
 }
 
-/* line 21, ../../sass/layout/_helpers.scss */
+/* line 22, ../../sass/layout/_helpers.scss */
 .expand {
   position: absolute;
   left: 0;
@@ -38,34 +38,34 @@
   height: 100%;
 }
 
-/* line 29, ../../sass/layout/_helpers.scss */
+/* line 30, ../../sass/layout/_helpers.scss */
 .d-none {
   display: none;
 }
 
-/* line 33, ../../sass/layout/_helpers.scss */
+/* line 34, ../../sass/layout/_helpers.scss */
 .full-width {
   width: 100%;
 }
 
-/* line 37, ../../sass/layout/_helpers.scss */
+/* line 38, ../../sass/layout/_helpers.scss */
 .full-height {
   height: 100%;
 }
 
-/* line 41, ../../sass/layout/_helpers.scss */
+/* line 42, ../../sass/layout/_helpers.scss */
 .cursor {
   cursor: pointer;
 }
 
-/* line 46, ../../sass/layout/_helpers.scss */
+/* line 47, ../../sass/layout/_helpers.scss */
 .grid-920 {
   width: 920px;
   margin: 0 auto;
 }
 
-/* line 51, ../../sass/layout/_helpers.scss */
+/* line 52, ../../sass/layout/_helpers.scss */
 .wrapper {
-  width: 80em;
+  width: 85.33333em;
   margin: 0 auto;
 }
