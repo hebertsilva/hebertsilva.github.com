@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
+@import url(http://fonts.googleapis.com/css?family=Lobster+Two:400,700italic,700,400italic);
 /* line 17, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -532,21 +533,22 @@ h2.title-section {
 /* line 382, ../../sass/pages/global.scss */
 #works {
   background: #f3f0f0;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.3);
 }
-/* line 384, ../../sass/pages/global.scss */
+/* line 385, ../../sass/pages/global.scss */
 #works .wrap-works {
   text-align: center;
 }
-/* line 386, ../../sass/pages/global.scss */
+/* line 387, ../../sass/pages/global.scss */
 #works .wrap-works h2.title-section {
   text-align: center;
   padding-top: 2em;
 }
-/* line 391, ../../sass/pages/global.scss */
+/* line 392, ../../sass/pages/global.scss */
 #works .wrap-works ul.list-works {
   display: inline-block;
 }
-/* line 393, ../../sass/pages/global.scss */
+/* line 394, ../../sass/pages/global.scss */
 #works .wrap-works ul.list-works li {
   float: left;
   margin-right: 2em;
@@ -562,7 +564,7 @@ h2.title-section {
   -moz-transition: border-color 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000) 0ms;
   transition: border-color 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000) 0ms;
 }
-/* line 404, ../../sass/pages/global.scss */
+/* line 405, ../../sass/pages/global.scss */
 #works .wrap-works ul.list-works li h3.title-work {
   font-family: 'Open Sans', sans-serif;
   color: #ec6f66;
@@ -571,7 +573,7 @@ h2.title-section {
   background: white;
   padding: 0.5em 0 0.5em 0;
 }
-/* line 413, ../../sass/pages/global.scss */
+/* line 414, ../../sass/pages/global.scss */
 #works .wrap-works ul.list-works li .wrap-item {
   width: 23em;
   height: 20em;
@@ -580,12 +582,16 @@ h2.title-section {
   background: #925743;
   position: relative;
 }
-/* line 421, ../../sass/pages/global.scss */
+/* line 422, ../../sass/pages/global.scss */
+#works .wrap-works ul.list-works li .wrap-item.mytask {
+  background: #4db672;
+}
+/* line 426, ../../sass/pages/global.scss */
 #works .wrap-works ul.list-works li .wrap-item img {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 426, ../../sass/pages/global.scss */
+/* line 431, ../../sass/pages/global.scss */
 #works .wrap-works ul.list-works li .wrap-item .text {
   background: rgba(255, 255, 255, 0.99);
   height: 100%;
@@ -600,7 +606,7 @@ h2.title-section {
   -moz-transition: opacity 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000) 0ms;
   transition: opacity 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000) 0ms;
 }
-/* line 435, ../../sass/pages/global.scss */
+/* line 440, ../../sass/pages/global.scss */
 #works .wrap-works ul.list-works li .wrap-item .text p {
   font-family: 'Open Sans', sans-serif;
   color: #4a4a4a;
@@ -609,7 +615,7 @@ h2.title-section {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 444, ../../sass/pages/global.scss */
+/* line 449, ../../sass/pages/global.scss */
 #works .wrap-works ul.list-works li .wrap-item .text p span.btn {
   font-size: 0.8em;
   background: #cd624e;
@@ -633,11 +639,11 @@ h2.title-section {
   -moz-transition: margin-top 400ms cubic-bezier(0.250, 0.100, 0.250, 1.000) 0ms;
   transition: margin-top 400ms cubic-bezier(0.250, 0.100, 0.250, 1.000) 0ms;
 }
-/* line 459, ../../sass/pages/global.scss */
+/* line 464, ../../sass/pages/global.scss */
 #works .wrap-works ul.list-works li .wrap-item .text p span.btn:hover {
   background: #CA5642;
 }
-/* line 467, ../../sass/pages/global.scss */
+/* line 472, ../../sass/pages/global.scss */
 #works .wrap-works ul.list-works li a.link-expand-text {
   width: 100%;
   height: 100%;
@@ -646,79 +652,107 @@ h2.title-section {
   top: 0;
   display: block;
 }
-/* line 481, ../../sass/pages/global.scss */
+/* line 486, ../../sass/pages/global.scss */
 #works .wrap-works ul.list-works li:hover .wrap-item .text {
   opacity: 1;
 }
-/* line 484, ../../sass/pages/global.scss */
+/* line 489, ../../sass/pages/global.scss */
 #works .wrap-works ul.list-works li:hover .wrap-item .text span.btn {
   margin-top: 1em;
 }
 
-/* line 495, ../../sass/pages/global.scss */
+/* line 500, ../../sass/pages/global.scss */
 #false-footer {
-  height: 20em;
+  height: 810px;
   z-index: 0;
   position: relative;
 }
 
-/* line 501, ../../sass/pages/global.scss */
+/* line 506, ../../sass/pages/global.scss */
 #footer {
   width: 100%;
-  height: 20em;
+  height: 810px;
   position: fixed;
   bottom: 0;
   z-index: 5;
-  background: #4a4a4a;
+  background: url("../../images/global/bg-footer.jpg") no-repeat center;
+  background-size: cover;
 }
-/* line 512, ../../sass/pages/global.scss */
+/* line 517, ../../sass/pages/global.scss */
 #footer .wrap-footer {
-  width: 40em;
+  width: 90em;
+  height: 20em;
   text-align: center;
-  line-height: 20em;
+  position: relative;
+  top: 30%;
 }
-/* line 516, ../../sass/pages/global.scss */
+/* line 525, ../../sass/pages/global.scss */
+#footer .wrap-footer .mini-title {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  display: inline-block;
+  margin-bottom: 3em;
+}
+/* line 534, ../../sass/pages/global.scss */
+#footer .wrap-footer .line {
+  width: 8em;
+  border-bottom: 1px solid white;
+  display: block;
+  margin: 0 auto;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+/* line 543, ../../sass/pages/global.scss */
+#footer .wrap-footer p {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 1.5em;
+  line-height: 1.7em;
+  max-width: 30em;
+  margin: 4em 0;
+  display: block;
+  margin: 0 auto;
+}
+/* line 554, ../../sass/pages/global.scss */
+#footer .wrap-footer h1 {
+  font-family: 'Lobster Two', cursive;
+  font-size: 8.33333em;
+  color: white;
+  font-weight: 700;
+  font-style: italic;
+}
+/* line 562, ../../sass/pages/global.scss */
 #footer .wrap-footer ul.shares {
   display: inline-block;
+  margin-top: 8em;
 }
-/* line 519, ../../sass/pages/global.scss */
+/* line 565, ../../sass/pages/global.scss */
 #footer .wrap-footer ul.shares li {
-  margin: 0 5em 1em 0;
+  margin: 0 2em 1em 0;
   float: left;
 }
-/* line 522, ../../sass/pages/global.scss */
+/* line 568, ../../sass/pages/global.scss */
 #footer .wrap-footer ul.shares li:last-child {
   margin-right: 0;
 }
-/* line 525, ../../sass/pages/global.scss */
+/* line 571, ../../sass/pages/global.scss */
 #footer .wrap-footer ul.shares li a {
   font-family: 'Josefin Sans', sans-serif;
   font-style: normal;
   font-size: 1.8em;
   line-height: 1em;
-  -webkit-transition: color 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000) 0ms;
-  -o-transition: color 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000) 0ms;
-  -ms-transition: color 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000) 0ms;
-  -moz-transition: color 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000) 0ms;
-  transition: color 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000) 0ms;
+  -webkit-transition: opacity 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000) 0ms;
+  -o-transition: opacity 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000) 0ms;
+  -ms-transition: opacity 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000) 0ms;
+  -moz-transition: opacity 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000) 0ms;
+  transition: opacity 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000) 0ms;
+  color: white;
+  font-size: 4em;
+  opacity: 0.5;
 }
-/* line 531, ../../sass/pages/global.scss */
-#footer .wrap-footer ul.shares li a.twitter {
-  color: #4099ff;
-}
-/* line 535, ../../sass/pages/global.scss */
-#footer .wrap-footer ul.shares li a.face {
-  color: #e9eaed;
-}
-/* line 539, ../../sass/pages/global.scss */
-#footer .wrap-footer ul.shares li a.git {
-  color: #f6f6f6;
-}
-/* line 543, ../../sass/pages/global.scss */
-#footer .wrap-footer ul.shares li a.linkedin {
-  color: #1b86bc;
-}
-/* line 547, ../../sass/pages/global.scss */
+/* line 596, ../../sass/pages/global.scss */
 #footer .wrap-footer ul.shares li a:hover {
-  opacity: 0.8;
+  opacity: 1;
 }
