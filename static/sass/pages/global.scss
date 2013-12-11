@@ -8,6 +8,7 @@
 body {
 	font-size: 12px;
 	background: $color01;
+	background: image-url('teste')
 }
 
 a {
@@ -86,7 +87,7 @@ h2.title-section {
 
 
 // PAGES - HOME
-#home {
+#home {  
 	background: $color01;
 	.wrap-home {
 		overflow: hidden;
