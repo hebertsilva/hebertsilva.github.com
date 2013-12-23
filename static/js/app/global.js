@@ -7,6 +7,7 @@ App.objects = {};
 
 App.objects.OnAnimationGlobal = function() {
 	this.el = $('.pages');
+	this.load = $('#wrap-loader');
 	this.win = $(window);
 	this.header = $('#header');
 	this.btnScroll = $('.btn-scroll');
@@ -19,6 +20,14 @@ App.objects.OnAnimationGlobal.prototype = {
 		this.setSizesPages();
 		this.onResize();
 		this.onScroll();
+		this.loadingSite();
+	},
+
+	loadingSite: function() {
+		var that = this;
+		this.win.on('load', function(){
+			that.load.fadeOut();
+		});
 	},
 
 	setSizesPages: function() {
