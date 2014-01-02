@@ -167,7 +167,7 @@ a {
   padding-bottom: 4.16667em;
   position: absolute;
   bottom: 100px;
-  background: url("../../../static/images/global/load.gif") no-repeat center bottom;
+  background: url("../../images/global/load.gif") no-repeat center bottom;
 }
 
 /* line 40, ../../sass/pages/global.scss */
